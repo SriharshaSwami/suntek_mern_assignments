@@ -1,0 +1,68 @@
+//For users
+GET http://localhost:3000/user-api/users
+
+###
+POST  http://localhost:3000/user-api/users
+Content-Type: application/json
+
+{
+    "id": 9,
+    "name": "Arjun",
+    "age": 21
+}
+
+###
+PUT http://localhost:3000/user-api/users
+Content-Type: application/json
+
+{
+    "id": 9,
+    "name": "Mona",
+    "age": 19
+}
+
+###
+GET http://localhost:3000/user-api/user-id/users/9
+
+###
+DELETE http://localhost:3000/user-api/users/9
+
+
+
+//For products
+###
+GET http://localhost:3000/product-api/products
+
+###
+POST http://localhost:3000/product-api/products
+Content-Type: application/json
+
+{
+    "productId": 101,
+    "name": "Mic",
+    "price": 15000,
+    "brand": "Marshall"
+}
+
+###
+PUT http://localhost:3000/product-api/products
+Content-Type: application/json
+
+{
+    "productId": 101,
+    "name": "Ear buds",
+    "price": 1000,
+    "brand": "Boat"
+}
+
+//get by productId
+###
+GET https://localhost:3000/product-api/product-id/101
+
+//get by name
+###
+GET https://localhost:3000/product-api/product-name/Boat
+
+//delete by productId
+###
+DELETE https://localhost:3000/product-api/products/101
